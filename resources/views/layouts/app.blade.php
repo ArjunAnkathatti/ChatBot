@@ -3,7 +3,9 @@
 	<title>
 		ChatBot
 	</title>
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="stylesheet" href="/css/app.css">
+	@yield('javascript')
 </head>
 <body>
 	@include('inc.navbar')

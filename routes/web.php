@@ -30,3 +30,9 @@ Route::post('/contact/submit', 'MessagesController@submit');
 
 Route::get('/messages', 'MessagesController@getMessages');
 
+Route::get('/chatbot', function() {
+	return view('chatbot');
+});
+
+Route::get('/api/v1/chatbot', 'ChatBot@getResponse');
+
